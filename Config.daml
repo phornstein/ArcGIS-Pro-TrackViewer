@@ -1,0 +1,42 @@
+﻿<ArcGIS defaultAssembly="ProTrackViewer.dll" defaultNamespace="ProTrackViewer" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{53825a6b-d41a-4900-95fe-15a7f98b89a0}" version="1.1" desktopVersion="2.8.29751">
+    <Name>ProTrackViewer</Name>
+    <Description>ProTrackViewer description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>park9205</Author>
+    <Company>Esri</Company>
+    <Date>8/28/2021 11:21:32 PM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="ProTrackViewer_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="ProTrackViewer_Tab1" caption="Track Viewer">
+          <group refID="ProTrackViewer_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="ProTrackViewer_Group1" caption="" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="ProTrackViewer_TrackViewerDockpane_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="ProTrackViewer_TrackViewerDockpane_ShowButton" caption="Show Track Viewer" className="TrackViewerDockpane_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/JobBringOnline32.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/JobBringOnline32.png">
+          <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <dockPane id="ProTrackViewer_TrackViewerDockpane" caption="Track Viewer" className="TrackViewerDockpaneViewModel" dock="group" dockWith="esri_core_projectDockPane">
+          <content className="TrackViewerDockpaneView" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>
