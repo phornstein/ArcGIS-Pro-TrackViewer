@@ -147,6 +147,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\IconBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DarkImages\IconBackground.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--
   PackageAction can be:

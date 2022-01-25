@@ -25,7 +25,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="115"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*" MinWidth="155"/>
         </Grid.ColumnDefinitions>
         <!--Select Track Featureclass-->
@@ -100,7 +100,7 @@
         <Button Grid.Row="5"
                 Grid.Column="0"
                 HorizontalAlignment="Left"
-                Margin="0,0,2,0"
+                Margin="2"
                 ToolTip="Create Layer from Selected Features"
                 Click="CreateLayerFromSelected_Click">
             <Image Source="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CreateFromSelection32.png"></Image>
@@ -110,7 +110,7 @@
         <Button Grid.Row="5"
                 Grid.Column="0"
                 HorizontalAlignment="Left"
-                Margin="27,0,2,0"
+                Margin="27,2,2,2"
                 ToolTip="Copy Selected Attributes to Clipboard"
                 Click="CopyAttributes_Click">
             <Image Source="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/EditCopy32.png"/>
@@ -119,11 +119,12 @@
         <!--Select Ordering Method-->
         <TextBlock Grid.Row="5"
                    Grid.Column="0"
-                   Margin="0,0,2,0"
+                   Margin="2"
                    HorizontalAlignment="Right"
                    Text="Sort by: "></TextBlock>
         <ComboBox Grid.Row="5"
                   Grid.Column="1"
+                  Margin="2"
                   HorizontalAlignment="Stretch"
                   SelectedItem="{Binding SelectedSortMethod, Mode=TwoWay}">
             <ComboBoxItem>Most Points</ComboBoxItem>

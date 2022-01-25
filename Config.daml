@@ -2,7 +2,7 @@
   <AddInInfo id="{53825a6b-d41a-4900-95fe-15a7f98b89a0}" version="1.1" desktopVersion="2.8.29751">
     <Name>ProTrackViewer</Name>
     <Description>ProTrackViewer description</Description>
-    <Image>Images\AddinDesktop32.png</Image>
+    <Image>Images\IconBackground.png</Image>
     <Author>park9205</Author>
     <Company>Esri</Company>
     <Date>8/28/2021 11:21:32 PM</Date>
@@ -28,7 +28,7 @@
       </groups>
       <controls>
         <!-- add your controls here -->
-        <button id="ProTrackViewer_TrackViewerDockpane_ShowButton" caption="Show Track Viewer" className="TrackViewerDockpane_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/JobBringOnline32.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/JobBringOnline32.png">
+        <button id="ProTrackViewer_TrackViewerDockpane_ShowButton" caption="Show Track Viewer" className="TrackViewerDockpane_ShowButton" loadOnClick="true" largeImage="Images/IconBackground.png">
           <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
         </button>
       </controls>
